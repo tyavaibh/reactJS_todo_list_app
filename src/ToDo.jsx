@@ -48,6 +48,7 @@ class ToDo extends Component{
                 <div className={"dispBox"}>
                     <input className={"item"} 
                     type="text" 
+                    placeholder="add your tasks here..."
                     name="" 
                     id="" 
                     value={this.state.item} 
