@@ -22,8 +22,8 @@ class List extends Component{
                             console.log(index)
                             return <>
                                 <li key={index}>{work}</li> 
-                                <button onClick={this.props.handleRemove} 
-                                className={"btn_list"} id={index}>X</button>
+                                <button onClick={()=>{this.props.handleRemove(work)}} 
+                                className={"btn_list"}>X</button>
                                 <br /><br />
 
                             </>

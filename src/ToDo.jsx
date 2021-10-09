@@ -20,14 +20,14 @@ class ToDo extends Component{
         
     }
 
-    handleRemove=(e)=>{
+    handleRemove=(work)=>{
         // console.log("clicked",e.target.id);
 
         
-        let fil_items=this.state.items.filter( (el,index)=>{ 
-            if(e.target.id!==index){
-                return el;
-            }
+        let fil_items=this.state.items.filter( (el)=>{ 
+            
+                 return el!==work;
+            
         } )
 
     
